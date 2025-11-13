@@ -1,0 +1,365 @@
+<!doctype html> 
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracie Abrams Wiki</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="alinharDesgracie.css">
+
+  <style>
+    body {
+      background-color: #fffacd;
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', sans-serif;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: #000;
+    }
+
+    .info-text, .about-text {
+      font-size: 20px;
+      color: #333;
+      margin-top: 15px;
+      line-height: 1.8;
+      text-align: justify;
+      max-width: 700px;
+      word-wrap: break-word;
+    }
+
+    .social-title {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 10px 20px;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      font-size: 2.5rem;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff66b2;
+    }
+
+    .navbar-custom {
+      background-color: #007bff;
+    }
+
+    .navbar-brand {
+      color: #000 !important;
+      font-weight: 700;
+      font-family: 'Courier New', sans-serif;
+    }
+
+    .dropdown-menu .dropdown-item {
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      font-family: 'Courier New', sans-serif;
+    }
+
+    .dropdown-menu {
+      transform: translateX(-20px) !important;
+    }
+
+    .top-section {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 40px;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .top-section img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .text-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 750px;
+    }
+  </style>
+</head>
+
+<body class="container-fluid p-0">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3 fw-bold" href="#">Gracie Abrams Wiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sobre
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="sobreDropdown">
+              <li><a class="dropdown-item" href="sobreela.html">Gracie Abrams</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="amigosDropdown">Amigos</a>
+                <ul class="dropdown-menu" aria-labelledby="amigosDropdown">
+                  <li><a class="dropdown-item" href="oliviarodrigo.html">Olivia Rodrigo</a></li>
+                  <li><a class="dropdown-item" href="taylorswift.html">Taylor Swift</a></li>
+                  <li><a class="dropdown-item" href="audrey.html">Audrey Hobert</a></li>
+                  <li><a class="dropdown-item" href="sabrina.html">Sabrina Carpenter</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+  <a class="dropdown-item dropdown-toggle" href="#" id="familiaDropdown">Família</a>
+  <ul class="dropdown-menu" aria-labelledby="familiaDropdown">
+    <li><a class="dropdown-item" href="jjabrams.html">J.J. Abrams (Pai)</a></li>
+    <li><a class="dropdown-item" href="katiemcgrath.html">Katie McGrath (Mãe)</a></li>
+    <li><a class="dropdown-item" href="august.html">August Abrams (Irmão)</a></li>
+    <li><a class="dropdown-item" href="henry.html">Henry Abrams (Irmão)</a></li>
+    <li><a class="dropdown-item" href="paulmescal.html">Paul Mescal (Namorado)</a></li>
+    <li><a class="dropdown-item" href="abby.html">Abby Waisler (Prima)</a></li>
+  </ul>
+</li>
+
+              <li><a class="dropdown-item" href="premios.html">Prêmios</a></li>
+              <li><a class="dropdown-item" href="weenie.html">Weenie</a></li>
+              <li><a class="dropdown-item" href="galeriadefotos.html">Galeria de Fotos</a></li>
+            </ul>
+          </li>
+
+          <!-- Produtos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="produtosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produtos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="produtosDropdown">
+              <li><a class="dropdown-item" href="viniscds.html">Vinis</a></li>
+              <li><a class="dropdown-item" href="roupas.html">Roupas</a></li>
+              <li><a class="dropdown-item" href="itens.html">Itens</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção principal -->
+  <div class="top-section">
+    <div class="image-column">
+      <img src="gracieaa.webp" alt="Gracie Abrams">
+      <img src="gracie22.jpg" alt="Gracie Abrams">
+      <img src="gracie3.jfif" alt="Gracie Abrams">
+    </div>
+
+    <div class="text-section">
+      <h1>Bem-vindo à Gracie Abrams Wiki</h1>
+
+      <div class="about-text">
+        <h3>Sobre Gracie Abrams</h3>
+        <p>
+          Gracie Abrams (nascida em 7 de setembro de 1999) é uma cantora e compositora americana. Nascida em Los Angeles, Califórnia, e contratada pela Interscope Records, Gracie rapidamente conquistou seu espaço na indústria musical com suas músicas emocionalmente intensas.
+        </p>
+        <p>
+          Ela é conhecida por seus singles virais “I miss you, I’m sorry” e “I Love You, I’m Sorry”. Inspirada por artistas como Joni Mitchell, Bon Iver, Taylor Swift e Phoebe Bridgers, Gracie traz vulnerabilidade e honestidade em suas composições.
+        </p>
+        <p>
+          Atualmente, acumula mais de 50 milhões de ouvintes mensais no Spotify e foi indicada ao Grammy de Artista Revelação, além de receber o prêmio Billboard Women in Music de Compositora do Ano em 2025.
+        </p>
+        <p>
+  <!-- Rodapé -->
+  <footer>© 2025 - Desenvolvido por Mariana Cruz</footer></p>
+        
+      </div>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="social-icons">
+      <div class="social-title">Siga Gracie Abrams em suas redes sociais:</div>
+      <div class="social-grid">
+        <a href="https://www.instagram.com/gracieabrams/"><i class="bi bi-instagram"></i></a>
+        <a href="https://music.apple.com/br/artist/gracie-abrams/1450554836"><i class="bi bi-apple"></i></a>
+        <a href="https://www.tiktok.com/@tehegracietehe"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCwXDwwxNVRXPcPk7ABkakdA"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.threads.net/@gracieabrams"><i class="bi bi-threads"></i></a>
+        <a href="https://open.spotify.com/artist/4tuJ0bMpJh08umKkEXKUI5"><i class="bi bi-spotify"></i></a>
+        <a href="https://x.com/gracieabrams"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.snapchat.com/@gracieabrams?locale=pt-BR"><i class="bi bi-snapchat"></i></a>
+      </div>
+    </div>
+
+  <!-- Seção de Álbuns -->
+  <div class="albums-side">
+    <div class="albums-navbar">Álbuns</div>
+    <div class="albums-row">
+      <div class="album-item">
+        <a href="https://open.spotify.com/intl-pt/album/78YYcghEDz2dHRx0EcDGXZ" target="_blank">
+          <img src="GOODRIDDANCE.jfif" alt="Good Riddance">
+        </a>
+        <p>Good Riddance (2023)</p>
+      </div>
+      <div class="album-item">
+        <a href="https://open.spotify.com/intl-pt/album/56bdWeO40o3WfAD2Lja4dl" target="_blank">
+          <img src="THESECRETOFUS.jfif" alt="The Secret of Us">
+        </a>
+        <p>The Secret of Us (2024)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção de EPs -->
+  <div class="vinis-side">
+    <div class="vinis-navbar">EPs</div>
+    <div class="vinis-row">
+      <div class="vini-item">
+        <a href="https://open.spotify.com/intl-pt/album/2UZw04wDxLVceADw2Gi1Qy" target="_blank">
+        <img src="minorr.jpg" alt="Minor">
+        </a>
+        <p>Minor (2020)</p>
+      </div>
+      <div class="vini-item">
+        <a href="https://open.spotify.com/intl-pt/album/7l2g05NyprwonSFIs2y8at" target="_blank">
+        <img src="this.webp" alt="This Is What It Feels Like">
+        </a>
+        <p>This Is What It Feels Like (2021)</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        let submenu = this.nextElementSibling;
+        submenu.classList.toggle('show');
+      });
+    });
+  </script>
+    <!-- EFEITO DE GLITTER DE ESTRELINHAS -->
+  <canvas id="glitterCanvas"></canvas>
+  <script>
+    const canvas = document.getElementById('glitterCanvas');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    let active = true;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function createStars(count) {
+      for (let i = 0; i < count; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * -canvas.height,
+          size: Math.random() * 8 + 5,
+          speed: Math.random() * 2 + 1,
+          opacity: Math.random(),
+          color: Math.random() > 0.5 ? '#ffd700' : '#ff66cc' // dourado e rosa
+        });
+      }
+    }
+
+    function drawStar(x, y, radius, color, opacity) {
+      const spikes = 5;
+      const step = Math.PI / spikes;
+      ctx.beginPath();
+      ctx.moveTo(x, y - radius);
+      for (let i = 0; i < spikes * 2; i++) {
+        const r = (i % 2 === 0) ? radius : radius / 2;
+        const angle = i * step - Math.PI / 2;
+        ctx.lineTo(x + Math.cos(angle) * r, y + Math.sin(angle) * r);
+      }
+      ctx.closePath();
+      ctx.globalAlpha = opacity;
+      ctx.fillStyle = color;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function updateStars() {
+      for (let s of stars) {
+        s.y += s.speed;
+        s.opacity = Math.abs(Math.sin(Date.now() / 300 + s.x)); // brilho pulsante
+        if (s.y > canvas.height) {
+          s.y = -10;
+          s.x = Math.random() * canvas.width;
+        }
+      }
+    }
+
+    function animate() {
+      if (!active) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      updateStars();
+      for (let s of stars) {
+        drawStar(s.x, s.y, s.size, s.color, s.opacity);
+      }
+      requestAnimationFrame(animate);
+    }
+
+    // Inicia efeito
+    createStars(150);
+    animate();
+
+    // Remove glitter após 5 segundos com fade-out suave
+    setTimeout(() => {
+      let fade = 1;
+      const fadeOut = setInterval(() => {
+        fade -= 0.05;
+        canvas.style.opacity = fade;
+        if (fade <= 0) {
+          clearInterval(fadeOut);
+          canvas.remove();
+          active = false;
+        }
+      }, 100);
+    }, 5000);
+
+    // Configura estilo do canvas
+    canvas.style.position = 'fixed';
+    canvas.style.top = 0;
+    canvas.style.left = 0;
+    canvas.style.pointerEvents = 'none';
+    canvas.style.zIndex = 9999;
+    canvas.style.transition = 'opacity 0.5s ease';
+  
+    
+  </script>
+</body>
+
+</html>

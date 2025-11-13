@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taylor Swift</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffacd; /* fundo amarelo claro */
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar azul */
+    header {
+      background-color: #007bff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    /* Botão de voltar */
+    .back-button {
+      position: absolute;
+      left: 25px;
+      background: #fffacd;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #000;
+      color: #fffacd;
+      border-color: #fffacd;
+    }
+
+    /* Caixa turquesa */
+    .conteudo {
+      background-color: #40E0D0; /* azul turquesa */
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    /* Imagem ao lado */
+    .imagem {
+      flex: 0 0 320px;
+    }
+
+    .imagem img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Texto */
+    .texto {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-top: 15px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <button class="back-button" onclick="window.location.href='index.html'">← Voltar</button>
+    Taylor Swift
+  </header>
+
+  <div class="conteudo">
+    <!-- Imagem -->
+    <div class="imagem">
+      <img src="taylorr.webp" alt="Taylor Swift">
+    </div>
+
+    <!-- Texto -->
+    <div class="texto">
+      <p>
+        Taylor Alison Swift (nascida em 13 de dezembro de 1989) é uma cantora, compositora, produtora musical, atriz, diretora, filantropa, empresária e ícone cultural norte-americana. Ela é uma grande amiga da também cantora Gracie Abrams.
+      </p>
+
+      <p>
+        As duas se tornaram próximas em 2022, quando Abrams foi anunciada como uma das artistas de abertura da turnê <em>The Eras Tour</em>, de Taylor Swift. Desde então, elas mantêm uma amizade forte, marcada por momentos especiais — Gracie chegou a comparecer às festas de aniversário de 32 e 34 anos de Taylor. Durante a turnê, Swift trouxe Abrams ao palco como convidada surpresa em três ocasiões durante o set acústico. No primeiro show em que Gracie participou como abertura, Taylor dedicou a canção <em>“Clean”</em> a ela, gesto que simbolizou o carinho e a conexão entre as duas.
+      </p>
+
+      <p>
+        Além da amizade, Taylor Swift e Gracie Abrams colaboraram musicalmente na faixa <em>“us.”</em>, que conta com a participação de Taylor. A música consolidou ainda mais a relação entre as artistas, unindo suas vozes em uma parceria marcada por emoção e cumplicidade.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

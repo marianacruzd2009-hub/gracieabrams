@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acessórios</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #fffacd; /* amarelo claro */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar azul */
+    header {
+      background-color: #007bff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    /* Botão de voltar */
+    .back-button {
+      position: absolute;
+      left: 25px;
+      background: #fffacd;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #000;
+      color: #fffacd;
+      border-color: #fffacd;
+    }
+
+    /* Layout da galeria */
+    main {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      justify-items: center;
+    }
+
+    .photo {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      width: 100%;
+      max-width: 320px; /* aumentei o tamanho dos quadradinhos */
+      text-align: center;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 280px; /* imagem maior */
+      object-fit: cover;
+      display: block;
+      border-bottom: 2px solid #eee;
+    }
+
+    .caption {
+      padding: 15px;
+      font-size: 1.1em;
+      color: #000;
+      background-color: #fdfdfd;
+      border-top: 1px solid #eee;
+      font-weight: bold;
+    }
+
+    @media (max-width: 1000px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="window.location.href='index.html'">← Voltar</button>
+     Acessórios
+  </header>
+
+  <main id="galeria"></main>
+
+  <script>
+    const fotos = [
+      {src: 'bandana.webp', legenda: 'Gracie x Oddli Bandana Azul-Marinho', link: 'https://shop.gracieabrams.com/collections/accessories/products/gracie-x-oddli-navy-bandana'},
+      {src: 'hat.webp', legenda: 'GA Tour Boné', link: 'https://shop.gracieabrams.com/collections/accessories/products/ga-tour-hat'},
+      {src: 'guitar.webp', legenda: 'Alça para violão', link: 'https://shop.gracieabrams.com/collections/accessories/products/star-repeat-adjustable-guitar-strap'},
+      {src: 'bag.webp', legenda: 'TSOU Bolsa Amarela', link: 'https://shop.gracieabrams.com/collections/accessories/products/the-secret-of-us-tote'},
+      {src: 'recordplayer.webp', legenda: 'TSOU Toca-Discos e Tapete personalizado', link: 'https://shop.gracieabrams.com/collections/accessories/products/the-secret-of-us-record-player-custom-slipmat'},
+      {src: 'risk.webp', legenda: 'Risk - Meias até o joelho, pack de 2', link: 'https://shop.gracieabrams.com/collections/accessories/products/risk-knee-socks-pack-of-2'}
+    ];
+
+    const galeria = document.getElementById('galeria');
+    fotos.forEach(foto => {
+      const div = document.createElement('div');
+      div.className = 'photo';
+      div.innerHTML = `
+        <a href="${foto.link}" target="_blank">
+          <img src="${foto.src}" alt="${foto.legenda}">
+        </a>
+        <div class="caption">${foto.legenda}</div>
+      `;
+      galeria.appendChild(div);
+    });
+  </script>
+</body>
+</html>

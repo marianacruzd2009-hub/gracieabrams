@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Ela</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffacd; /* fundo amarelo claro */
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar azul */
+    .navbar-custom {
+      background-color: #007bff;
+      color: #000;
+      padding: 15px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.8em;
+      position: relative;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    /* Botão de voltar */
+    .back-button {
+      position: absolute;
+      left: 25px;
+      background: #fffacd;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: 0.3s;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .back-button:hover {
+      background: #000;
+      color: #fffacd;
+      border-color: #fffacd;
+    }
+
+    /* Caixa turquesa */
+    .conteudo {
+      background-color: #40E0D0; /* azul turquesa */
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    /* Imagem */
+    .imagem {
+      flex: 0 0 320px;
+    }
+
+    .imagem img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Texto */
+    .texto {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-top: 15px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar-custom">
+    <button class="back-button" onclick="window.location.href='index.html'">← Voltar</button>
+    Gracie Abrams
+  </nav>
+
+  <div class="conteudo">
+    <!-- Imagem -->
+    <div class="imagem">
+      <img src="graciebio.avif" alt="Gracie Abrams">
+    </div>
+
+    <!-- Texto -->
+    <div class="texto">
+      <p>
+        Gracie Abrams (nascida em 7 de setembro de 1999) é uma cantora e compositora norte-americana. 
+        Nascida em Los Angeles, Califórnia, e contratada pela Interscope Records, Gracie rapidamente 
+        conquistou seu espaço na indústria musical com suas canções emocionalmente envolventes. Ela é 
+        conhecida por suas músicas mais elogiadas, como “I miss you, I’m sorry”, “21”, “Mess It Up”, 
+        “Difficult”, “I Love You, I’m Sorry” e “That’s So True”.
+      </p>
+
+      <p>
+        Gracie começou publicando covers de diferentes músicas no YouTube antes de lançar suas próprias 
+        composições, e afirmou que se inspira em grandes nomes da indústria, como Joni Mitchell, Simon & Garfunkel, 
+        Elvis Costello, Bon Iver, Elliott Smith, Kate Bush, The 1975, James Blake, Taylor Swift, Lorde e 
+        Phoebe Bridgers. Atualmente, ela acumula mais de 50 milhões de ouvintes mensais e 4,4 milhões de 
+        seguidores no Spotify. Abrams recebeu diversas indicações e prêmios importantes, incluindo uma 
+        indicação ao Grammy de Artista Revelação e o prêmio Billboard Women in Music de Compositora do Ano em 2025.
+      </p>
+
+      <p>
+        Desde o lançamento de seu single de estreia, “Mean It” em 2019, Gracie tem sido amplamente elogiada 
+        por sua habilidade em capturar emoções complexas com vulnerabilidade e sinceridade. Seu primeiro EP, 
+        Minor (2020), apresentou seu estilo característico do bedroom pop. Em 2021, ela lançou This Is What It 
+        Feels Like, consolidando sua presença na cena indie pop com faixas marcantes como “Feels Like” e “Rockland”.
+      </p>
+
+      <p>
+        Gracie também já trabalhou com produtores renomados, como Aaron Dessner, e fez turnês como artista de 
+        abertura para grandes nomes, incluindo Olivia Rodrigo e Taylor Swift.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

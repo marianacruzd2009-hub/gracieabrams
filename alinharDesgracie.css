@@ -1,0 +1,213 @@
+body {
+  background-color: #fffacd;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  color: #000;
+}
+
+.info-text, .about-text {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.social-icons a {
+  font-size: 2.5rem;
+  margin: 0 15px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff66b2;
+}
+
+.navbar-custom {
+  background-color: #007bff;
+}
+
+.navbar-brand {
+  color: #000 !important;
+  font-weight: 700;
+  font-family: 'Courier New', sans-serif;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-family: 'Courier New', sans-serif;
+}
+
+.top-section {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.top-section img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 750px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+/* --- ÁREA DOS ÁLBUNS --- */
+.albums-side {
+  position: absolute;
+  top: calc(220px + 0cm);
+  right: calc(60px + 4cm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+/* Título "Albuns" */
+.albums-navbar {
+  background-color: #007bff;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px 250px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 320px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Capas lado a lado */
+.albums-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.album-item {
+  text-align: center;
+}
+
+.album-item img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.album-item p {
+  font-family: 'Courier New', monospace;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* --- NOVA ÁREA DE VINIS --- */
+.vinis-side {
+  position: absolute;
+  top: calc(500px + 2cm); /* ajusta a posição abaixo dos álbuns */
+  right: calc(60px + 3cm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.vinis-navbar {
+  background-color: #007bff;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px 250px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 320px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Capas de vinis lado a lado */
+.vinis-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+}
+
+.vini-item {
+  text-align: center;
+}
+
+.vini-item img {
+  width: 100px;
+   height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.vini-item p {
+  font-family: 'Courier New', monospace;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .albums-side,
+  .vinis-side {
+    position: static;
+    margin: 20px auto;
+    align-items: center;
+  }
+
+  .albums-row,
+  .vinis-row {
+    flex-direction: column;
+  }
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-column img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}  

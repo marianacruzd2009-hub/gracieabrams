@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeria de Fotos</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #fffacd; /* amarelo claro */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar azul */
+    header {
+      background-color: #007bff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    /* Botão de voltar */
+    .back-button {
+      position: absolute;
+      left: 25px;
+      background: #fffacd;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #000;
+      color: #fffacd;
+      border-color: #fffacd;
+    }
+
+    /* Layout da galeria */
+    main {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .photo {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      width: 100%;
+      max-width: 250px;
+      text-align: center;
+    }
+
+    .photo:hover {
+      transform: scale(1.03);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 2px solid #eee;
+    }
+
+    .caption {
+      padding: 10px;
+      font-size: 1em;
+      color: #000;
+      background-color: #fdfdfd;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 1000px) {
+      main {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="window.location.href='index.html'">← Voltar</button>
+    Galeria de Fotos
+  </header>
+
+  <main id="galeria"></main>
+
+  <script>
+    const fotos = [
+      {src: 'stone.jfif', legenda: '(2025) - Rollingstone'},
+      {src: 'applemusic.png', legenda: '(2025) - Apple Music'},
+      {src: 'chanel.webp', legenda: '(2025) - Chanel'},
+      {src: 'st.jfif', legenda: '(2022) - Sour Tour'},
+      {src: 'snll.jfif', legenda: '(2024) - Snl'},
+      {src: 'grammy.webp', legenda: '(2025) - Grammy Award '},
+      {src: 'spotifyy.jfif', legenda: ' (2024) - Spotify BNA'},
+      {src: 'thebottom.jpg', legenda: '(2021) - The Bottom Videoclipe'},
+      {src: 'ihear.jfif', legenda: '(2025) - iHeart'},
+      {src: 'billboard.jfif', legenda: '(2025) - Billboard WIM'},
+      {src: 'theeras.jfif', legenda: '(2024) - The Eras Tour Toronto'},
+      {src: 'vevoo.jfif', legenda: '(2024) - Vevo Extended Play'},
+      {src: 'tsou.jfif', legenda: '(2024) The Secret of Us Tour Los Angeles'},
+      {src: 'baby.jfif', legenda: 'Gracie Baby'},
+      {src: 'cannes.webp', legenda: '(2025) Cannes Gladiator 2 Premiere'}
+    ];
+
+    const galeria = document.getElementById('galeria');
+    fotos.forEach(foto => {
+      const div = document.createElement('div');
+      div.className = 'photo';
+      div.innerHTML = `
+        <img src="${foto.src}" alt="${foto.legenda}">
+        <div class="caption">${foto.legenda}</div>
+      `;
+      galeria.appendChild(div);
+    });
+  </script>
+</body>
+</html>

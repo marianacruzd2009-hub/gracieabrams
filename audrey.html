@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audrey</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffacd; /* fundo amarelo claro */
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar azul */
+    header {
+      background-color: #007bff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    /* Botão de voltar */
+    .back-button {
+      position: absolute;
+      left: 25px;
+      background: #fffacd;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #000;
+      color: #fffacd;
+      border-color: #fffacd;
+    }
+
+    /* Caixa turquesa */
+    .conteudo {
+      background-color: #40E0D0; /* azul turquesa */
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    /* Imagem ao lado */
+    .imagem {
+      flex: 0 0 320px;
+    }
+
+    .imagem img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Texto */
+    .texto {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-top: 15px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <button class="back-button" onclick="window.location.href='index.html'">← Voltar</button>
+    Audrey Hobert
+  </header>
+
+  <div class="conteudo">
+    <!-- Imagem -->
+    <div class="imagem">
+      <img src="audreyy.webp" alt="Audrey Hobert">
+    </div>
+
+    <!-- Texto -->
+    <div class="texto">
+      <p>
+        Audrey Hobert (nascida em 19 de fevereiro de 1999) é uma cantora, compositora e contadora de histórias americana cujo pop afiado e autocrítico combina synth-pop, dance-punk e hyperpop com humor mordaz e detalhes diarísticos. Formada em Belas Artes pela NYU em 2021, ela ganhou reconhecimento inicialmente ao coescrever várias faixas para sua amiga de longa data Gracie Abrams — incluindo “That's So True”, “I Love You, I'm Sorry”, entre outras — antes de assumir seu próprio destaque em 2025.
+      </p>
+
+      <p>
+        Seu álbum de estreia, Who’s the Clown? (Quem é o palhaço?), lançado em 15 de agosto de 2025 e produzido por Ricky Gourmet, foi precedido pelos singles “Sue Me”, “Bowling Alley” e “Wet Hair”, com “Thirst Trap” chegando junto ao lançamento do álbum.
+      </p>
+
+      <p>
+        Ao longo de suas doze faixas, Hobert utiliza ganchos de alta voltagem e narrativas cinematográficas para explorar a performance do “eu” na cultura moderna — uma visão que lhe rendeu aclamação da crítica e o apelido de “nova princesa palhaça do pop”.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia Rodrigo</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffacd; /* fundo amarelo claro */
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar azul */
+    header {
+      background-color: #007bff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+      border-bottom: 3px solid #0056b3;
+    }
+
+    /* Botão de voltar */
+    .back-button {
+      position: absolute;
+      left: 25px;
+      background: #fffacd;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #000;
+      color: #fffacd;
+      border-color: #fffacd;
+    }
+
+    /* Caixa turquesa */
+    .conteudo {
+      background-color: #40E0D0; /* azul turquesa */
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    /* Imagem ao lado */
+    .imagem {
+      flex: 0 0 320px;
+    }
+
+    .imagem img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Texto */
+    .texto {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-top: 15px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <button class="back-button" onclick="window.location.href='index.html'">← Voltar</button>
+    Olivia Rodrigo
+  </header>
+
+  <div class="conteudo">
+    <!-- Imagem -->
+    <div class="imagem">
+      <img src="oliviarodrigo.webp" alt="Olivia Rodrigo">
+    </div>
+
+    <!-- Texto -->
+    <div class="texto">
+      <p>
+        Olivia Rodrigo (nascida em 20 de fevereiro de 2003) é uma cantora, compositora e atriz americana que se tornou um dos maiores nomes do pop contemporâneo. Ganhou destaque mundial em 2021 com o lançamento de seu álbum de estreia <em>SOUR</em>, impulsionado pelo sucesso estrondoso do single “drivers license”, que quebrou recordes globais de streaming e a consolidou como uma das vozes mais sinceras de sua geração.
+      </p>
+
+      <p>
+        Sua música é marcada por letras confessionais, mesclando vulnerabilidade e força, com influências que vão do pop alternativo ao punk emocional. Em 2023, Olivia lançou seu segundo álbum, <em>GUTS</em>, elogiado pela crítica por retratar de forma intensa a transição da juventude à vida adulta.
+      </p>
+
+      <p>
+        Olivia mantém uma amizade próxima com Gracie Abrams, unidas por uma escrita introspectiva e emocional. As duas compartilham um respeito mútuo pela autenticidade na composição — Olivia chegou a afirmar em entrevistas que Gracie a inspira com sua “delicadeza brutal” nas letras. Em 2022, dividiram palcos durante parte da turnê <em>SOUR Tour</em>, fortalecendo ainda mais o laço artístico entre as duas.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
